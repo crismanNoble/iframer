@@ -1,0 +1,10 @@
+<div ng-controller="outer">
+<h1>\{{greeting}}</h1>
+<input ng-model="greeting">
+<p>Welcome to {{title}}</p>
+width:<input ng-model="width"></input><br/>
+scale:<input ng-model="scale"></input><br/>
+<div class="frameWrap">
+<iframe src="/iframe" id="iframe" ng-style="{width: width + 'px', transform: 'scale(' +scale+ ')'}"></iframe>
+</div>
+</div>

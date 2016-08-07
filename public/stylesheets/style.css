@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+iframe {
+  position: absolute;
+  top:0;
+  right: 0;
+  //max-width: 100%;
+  transform-origin: top right;
+}
+.frameWrap {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+}
+@media (min-width: 721px) {
+.test {
+    background-color: black;
+    color: white;
+  }
+  .test:after {
+    content: 'large';
+  }
+}
+
+
+
+@media (max-width: 720px) {
+  .test {
+    background-color: purple;
+    color: white;
+  }
+  .test:after {
+    content: 'small';
+  }
+}
+
+@media (max-width: 320px) {
+  .test {
+    background-color: red;
+    color: white;
+  }
+  .test:after {
+    content: 'mobile';
+  }
+}
